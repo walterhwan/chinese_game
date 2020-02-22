@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 p {
   display: block;
   margin-block-start: 0px;
@@ -53,6 +60,6 @@ p {
 }
 
 .text-black {
-  font-size: calc(100px + 2vmin);
+  font-size: 4.2vh;
   color: white;
 }

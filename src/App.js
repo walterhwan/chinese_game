@@ -9,13 +9,14 @@ function App() {
   const pair = pairs[pairNum]
   const wordCounts = [questions[pair[0]].wordCount, questions[pair[1]].wordCount]
 
-  console.log(text)
+  const arr = text.split('，')
+  const Block = () => arr.map((el) => <p>{`${el}`}</p>)
   
   return (
     <div className="App">
       <div className="question-number">
         <button className="question-button" onClick={() => {
-          const newPairNum = (pairNum - 1) >= 0 ? (pairNum - 1) : 0
+          const newPairNum = (pairNum - 1) >= 0 ? (pairNum - 1) : 5
           setPairNum(newPairNum)
         }}>{'<'}</button>
         <p>{`Q${pairNum + 1}`}</p>
@@ -35,7 +36,7 @@ function App() {
       </div>
       ) : (
         <div className="text-black" onClick={() => setQNum(0)}>
-          <p>{`${text}`}</p>
+          <Block/>
         </div>
       )}
     </div>
