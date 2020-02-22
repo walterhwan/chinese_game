@@ -1,5 +1,6 @@
 {
   "name": "chinese_game",
+  "homepage": "http://walterhwan.github.io/public/index.html",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
